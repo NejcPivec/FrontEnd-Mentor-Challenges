@@ -1,0 +1,81 @@
+.list {
+  background-color: $list-bg-color;
+  margin-top: 1.5625rem;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+
+  &__control {
+    width: 100%;
+    height: 3.125rem;
+    background-color: $item-bg-color;
+    color: $text-color;
+    border-bottom: 1px solid $item-border-color;
+    position: relative;
+    padding-right: 1.25rem;
+
+    .todo__text {
+      position: absolute;
+      top: 50%;
+      left: 3.125rem;
+      transform: translateY(-50%);
+
+      &.isChecked {
+        opacity: 0.5;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: $text-color;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    .delete__icon {
+      cursor: pointer;
+      &:hover {
+        animation: rotating 2s linear infinite alternate;
+      }
+    }
+  }
+
+  &__actions {
+    height: 3.125rem;
+    background-color: $item-bg-color;
+    color: $text-color;
+    padding: 0 1.25rem;
+
+    .list__menu {
+      margin: 0;
+    }
+  }
+
+  h1 {
+    font-size: 1rem;
+    padding: 1.25rem;
+    text-align: center;
+    color: $text-color;
+  }
+}
+
+.list__menu {
+  height: 3.125rem;
+  margin-top: 1.25rem;
+  border-radius: 0.3125rem;
+  background-color: $item-bg-color;
+  color: $text-color;
+
+  .list-btn {
+    font-size: 0.9rem;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    &.active {
+      color: $bright-blue;
+    }
+  }
+}

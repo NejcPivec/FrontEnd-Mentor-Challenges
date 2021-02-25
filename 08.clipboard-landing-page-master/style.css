@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,600&display=swap");
+
+:root {
+  --cyan-color: hsl(171, 66%, 44%);
+  --blue-color: hsl(233, 100%, 69%);
+  --dark-blue-color: hsl(210, 10%, 33%);
+  --grayish-blue-color: hsl(201, 11%, 66%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 200px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Header */
+header {
+  background: url("./images/bg-header-desktop.png") no-repeat center
+    center/cover;
+  padding: 50px;
+}
+
+.header-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+  margin-top: 50px;
+}
+
+header h1 {
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+header p {
+  width: 45%;
+  text-align: center;
+  color: var(--grayish-blue-color);
+  margin-bottom: 40px;
+}
+
+.btn-green {
+  background: var(--cyan-color);
+  box-shadow: 0 2px hsl(171, 66%, 34%);
+  margin-right: 10px;
+}
+
+.btn-purple {
+  background: var(--blue-color);
+  box-shadow: 0 2px hsl(233, 60%, 57%);
+}
+
+/* Snippets section */
+.snippets-text {
+  width: 45%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+  margin-top: 20px;
+  color: var(--grayish-blue-color);
+  margin-bottom: 60px;
+}
+
+.snippets-flex {
+  display: flex;
+}
+
+.snippets-flex > div {
+  flex: 1;
+}
+
+.snippets-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.snippets-right > div {
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.snippets-right p {
+  color: var(--grayish-blue-color);
+}
+
+/* Clipboard section */
+.clipboard {
+  margin-top: 100px;
+}
+
+.clipboard-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clipboard p {
+  margin: 20px 0 60px;
+  width: 50%;
+  text-align: center;
+  color: var(--grayish-blue-color);
+}
+
+/* Workflow section */
+.workflow-main-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.workflow-main-flex h2 {
+  margin-bottom: 20px;
+}
+
+.workflow-main-flex p {
+  color: var(--grayish-blue-color);
+}
+
+.workflow-flex {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.workflow-flex > div {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.workflow-flex h3 {
+  margin: 20px 0;
+}
+
+/* Company section */
+.companies {
+  margin: 100px 0;
+}
+
+.companies-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Clipboard fo section */
+.clipboard-for p {
+  width: 50%;
+  text-align: center;
+  color: var(--grayish-blue-color);
+  margin: 20px 0 50px;
+}
+
+/* Footer */
+footer {
+  background: hsl(202, 15%, 90%);
+  color: var(--grayish-blue-color);
+  padding: 20px 50px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li {
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+footer .links li {
+  margin-right: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-blue-color);
+  font-weight: 600;
+}
+
+.social a {
+  margin-right: 15px;
+}
+
+@media (max-width: 1200px) {
+  .pc {
+    width: 80%;
+    object-fit: contain;
+  }
+
+  .snippets-right div {
+    width: 100%;
+  }
+
+  footer .links li {
+    margin-right: 50px;
+  }
+
+  footer li a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .clipboard img {
+    width: 90%;
+    object-fit: contain;
+  }
+  .companies img {
+    object-fit: contain;
+    width: 100px;
+  }
+
+  footer .links li a {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+}
+
+/* Tablet size */
+@media (max-width: 800px) {
+  .pc {
+    width: 100%;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social a {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Mobile size */
+@media (max-width: 700px) {
+  /* Header */
+  header {
+    background: url("./images/bg-header-mobile.png") no-repeat center
+      center/cover;
+    padding: 30px;
+  }
+
+  header h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  header p {
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  .btn-green {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .btn-purple {
+    width: 100%;
+  }
+
+  /* Snippets section */
+  .snippets-text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .snippets-flex {
+    flex-direction: column;
+  }
+
+  .snippets-right {
+    text-align: center;
+  }
+
+  /* Clipboard */
+
+  .clipboard img {
+    width: 90%;
+  }
+
+  .clipboard p {
+    width: 90%;
+  }
+
+  /* Workflow section */
+
+  .workflow-main-flex p {
+    width: 90%;
+    text-align: center;
+  }
+
+  .workflow-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .workflow-flex > div {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .workflow-flex h3 {
+    margin: 20px 0;
+  }
+
+  /* Company section */
+  .companies-flex {
+    flex-direction: column;
+  }
+
+  .companies-flex img {
+    margin-bottom: 50px;
+    width: 30%;
+  }
+
+  /* Clipboard fo section */
+  .clipboard-for p {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    background: hsl(202, 15%, 90%);
+    color: var(--grayish-blue-color);
+    padding: 20px 50px;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .links li {
+    margin: 15px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--dark-blue-color);
+    font-weight: 600;
+  }
+
+  .social {
+    flex-direction: row;
+  }
+
+  .social a {
+    margin-right: 15px;
+  }
+}

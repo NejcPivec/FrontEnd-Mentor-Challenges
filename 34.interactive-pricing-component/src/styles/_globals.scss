@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: $font-sm;
+  color: $grayishBlue;
+
+  background-color: $veryPaleBlue;
+  background-image: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+
+  @include breakpoint-up(large) {
+    background-size: contain;
+  }
+}
+
+h3 {
+  margin-top: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.card__text {
+  font-size: 0.75rem;
+
+  @include breakpoint-up(medium) {
+    font-size: 1rem;
+  }
+}
+
+// Spacing
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.m {
+  &--b {
+    margin-bottom: 0.625rem;
+  }
+
+  &--4b {
+    margin-bottom: 2rem;
+  }
+
+  &--4t {
+    margin-top: 2rem;
+  }
+
+  &--r {
+    margin-right: 0.625rem;
+  }
+}
+
+// Visibility
+.hide-mobile {
+  // Hide for tablet and mobile
+  @include breakpoint-down(small) {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  // Hide for dektop
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}

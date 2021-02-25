@@ -1,0 +1,193 @@
+.card {
+  background-color: $white;
+  padding: 2rem 0;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px -2px $grayishBlue;
+
+  @include breakpoint-up(large) {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .title_desktop {
+      display: none;
+
+      @include breakpoint-up(large) {
+        display: flex;
+      }
+    }
+  }
+
+  h6 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+
+    @include breakpoint-up(medium) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 10px;
+    background-color: $lightGrayishBlue;
+    outline: none;
+    border-radius: 10px;
+
+    &::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      background-color: $strongCyan;
+      background-image: url(../images/icon-slider.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint-up(medium) {
+      font-size: 1.4rem;
+    }
+
+    @include breakpoint-up(large) {
+      display: none;
+    }
+
+    .slider__value {
+      color: $darkDesaturatedBlue;
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-right: 5px;
+
+      @include breakpoint-up(medium) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__toggle {
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 45px;
+      height: 20px;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      input:checked + .toggler {
+        background-color: $softCyan;
+      }
+
+      input:checked + .toggler:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(22px);
+      }
+
+      .toggler {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $lightGrayishBlue;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+
+        &::before {
+          position: absolute;
+          content: "";
+          height: 15px;
+          width: 15px;
+          left: 5px;
+          bottom: 3px;
+          background-color: white;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+        }
+
+        &.round {
+          border-radius: 34px;
+
+          &::before {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    .card_discound {
+      font-size: 0.7rem;
+      color: $lightRed;
+      background-color: $lightGrayishRed;
+      border-radius: 34px;
+      padding: 3px;
+
+      @include breakpoint-up(medium) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__lower {
+    border-top: 1px solid $lightGrayishBlue;
+
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    ul {
+      li {
+        @include breakpoint-up(large) {
+          text-align: left;
+        }
+        span {
+          margin-left: 0.625rem;
+        }
+      }
+    }
+
+    .button {
+      font-family: "Manrope", sans-serif;
+      background-color: $darkDesaturatedBlue;
+      color: $lightGrayishBlue;
+      border: none;
+      border-radius: 3.125rem;
+      padding: 0.625rem 3.125rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

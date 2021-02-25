@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Score -->
+      <div class="score-card flex">
+        <div class="options">
+          <h2>Rock</h2>
+          <h2>Peper</h2>
+          <h2>Scissors</h2>
+          <h2>Lizard</h2>
+          <h2>Spock</h2>
+        </div>
+        <div class="score">
+          <h5>Score</h5>
+          <span class="main-score">0</span>
+        </div>
+      </div>
+
+      <!-- Signs -->
+      <div class="signs">
+        <div class="flex-col">
+          <div class="scissors-container">
+            <button class="btn-circle scissors option" data-choice="scissors">
+              <span class="wrapper">
+                <img
+                  src="./images/icon-scissors.svg"
+                  alt="Scissors"
+                  class="icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div class="flex">
+            <div>
+              <button class="btn-circle spock option" data-choice="spock">
+                <span class="wrapper">
+                  <img src="./images/icon-spock.svg" alt="Spock" class="icon" />
+                </span>
+              </button>
+            </div>
+            <div>
+              <button class="btn-circle paper option" data-choice="paper">
+                <span class="wrapper">
+                  <img src="./images/icon-paper.svg" alt="Paper" class="icon" />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="flex-row bottom">
+            <div>
+              <button class="btn-circle lizard option" data-choice="lizard">
+                <span class="wrapper">
+                  <img
+                    src="./images/icon-lizard.svg"
+                    alt="Lizard"
+                    class="icon"
+                  />
+                </span>
+              </button>
+            </div>
+            <div>
+              <button class="btn-circle rock option" data-choice="rock">
+                <span class="wrapper">
+                  <img src="./images/icon-rock.svg" alt="Rock" class="icon" />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="rules" id="modal">
+        <p class="rules-text">Rules</p>
+        <img src="./images/image-rules-bonus.svg" alt="Rules" />
+        <button class="close">
+          <img src="./images/icon-close.svg" alt="close-icon" />
+        </button>
+      </div>
+
+      <button class="btn btn-rules">Rules</button>
+    </div>
+
+    <!-- Played section -->
+    <div class="container-max flex selection">
+      <div class="left">
+        <h3>You Picked</h3>
+        <button
+          class="btn-circle rock player"
+          data-choice="rock"
+          id="player-pick"
+        >
+          <span class="wrapper">
+            <img src="./images/icon-rock.svg" alt="Rock" class="icon" />
+          </span>
+        </button>
+      </div>
+      <div class="middle">
+        <h2 class="draw-result">You <span class="result">Win</span></h2>
+        <button class="play-again">Play Again</button>
+      </div>
+      <div class="right">
+        <h3>The House Picked</h3>
+        <button
+          class="btn-circle lizard"
+          data-choice="lizard"
+          id="computer-pick"
+        >
+          <span class="wrapper">
+            <img src="./images/icon-lizard.svg" alt="Lizard" class="icon" />
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

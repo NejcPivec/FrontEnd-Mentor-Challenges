@@ -1,0 +1,56 @@
+/*Layout Colors */
+$bright-blue: hsl(220, 98%, 61%);
+/* Light theme colors */
+$very-light-gray-l: hsl(0, 0%, 98%);
+$very-light-grayish-blue-l: hsl(236, 33%, 92%);
+$light-grayish-blue-l: hsl(233, 11%, 84%);
+$dark-grayish-blue-l: hsl(236, 9%, 61%);
+$very-dark-grayish-blue-l: hsl(235, 19%, 35%);
+/* Dark theme colors */
+$very-dark-blue: hsl(235, 21%, 11%);
+$very-dark-desaturated-blue: hsl(235, 24%, 19%);
+$light-grayish-blue: hsl(234, 39%, 85%);
+$light-grayish-blue-hover: hsl(236, 33%, 92%);
+$dark-grayish-blue: hsl(234, 11%, 52%);
+$very-dark-grayish-blue: hsl(237, 14%, 26%);
+
+/* Both Theme Colors */
+html[data-theme="light"] {
+  --bg-color: hsl(236, 33%, 92%);
+  --text-color: hsl(235, 21%, 11%);
+  --list-bg-color: hsl(0, 0%, 98%);
+  --item-bg-color: hsl(0, 0%, 98%);
+  --item-border-color: hsl(234, 39%, 85%);
+  --checkbox-bg-inactive-color: hsl(0, 0%, 98%);
+  --checkbox-border-inactive-color: hsl(234, 39%, 85%);
+  --input-placeholder-color: hsl(234, 11%, 52%);
+}
+
+html[data-theme="dark"] {
+  --bg-color: hsl(235, 21%, 11%);
+  --text-color: hsl(234, 39%, 85%);
+  --list-bg-color: hsl(237, 14%, 26%);
+  --item-bg-color: hsl(235, 24%, 19%);
+  --item-border-color: hsl(237, 14%, 26%);
+  --checkbox-bg-inactive-color: hsl(235, 24%, 19%);
+  --checkbox-border-inactive-color: hsl(237, 14%, 26%);
+  --input-placeholder-color: hsl(234, 11%, 52%);
+}
+
+/* Colors */
+$white: #fff;
+$bg-color: var(--bg-color);
+$text-color: var(--text-color);
+$list-bg-color: var(--list-bg-color);
+$item-bg-color: var(--item-bg-color);
+$item-border-color: var(--item-border-color);
+$checkbox-bg-inactive-color: var(--checkbox-bg-inactive-color);
+$checkbox-border-inactive-color: var(--checkbox-border-inactive-color);
+$checkbox-gradient: linear-gradient(
+  135deg,
+  hsl(192, 100%, 67%),
+  hsl(280, 87%, 65%)
+);
+$input-placeholder-color: var(--input-placeholder-color);
+$action-text-color: var(--input-placeholder-color);
+$action-text-active-color: $bright-blue;

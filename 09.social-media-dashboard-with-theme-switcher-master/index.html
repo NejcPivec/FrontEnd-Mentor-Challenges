@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="container">
+        <div class="flex-row">
+          <div class="left">
+            <h3>Social Media Dashboard</h3>
+            <h6>Total Followers: 23,004</h6>
+          </div>
+          <div class="right">
+            <small class="toggle-text">Dark Mode</small>
+            <input type="checkbox" id="checkbox" class="checkbox" />
+            <label for="checkbox" class="label">
+              <div class="ball"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Total section -->
+    <section class="total">
+      <div class="container">
+        <div class="total-grid">
+          <div class="card fb">
+            <div class="flex-col">
+              <div class="name">
+                <img src="./images/icon-facebook.svg" alt="fb" />
+                <small>@nathanf</small>
+              </div>
+              <h1>1987</h1>
+              <p>Followers</p>
+              <small class="up"
+                ><span><img src="./images/icon-up.svg" alt="up" /></span> 12
+                Today</small
+              >
+            </div>
+          </div>
+
+          <div class="card twitter">
+            <div class="flex-col">
+              <div class="name">
+                <img src="./images/icon-twitter.svg" alt="twitter" />
+                <small>@nathanf</small>
+              </div>
+              <h1>1044</h1>
+              <p>Followers</p>
+              <small class="up"
+                ><span><img src="./images/icon-up.svg" alt="up" /></span> 99
+                Today</small
+              >
+            </div>
+          </div>
+
+          <div class="card instagram">
+            <div class="flex-col">
+              <div class="name">
+                <img src="./images/icon-instagram.svg" alt="insta" />
+                <small>@realnathanf</small>
+              </div>
+              <h1>11k</h1>
+              <p>Followers</p>
+              <small class="up"
+                ><span><img src="./images/icon-up.svg" alt="up" /></span> 1099
+                Today</small
+              >
+            </div>
+          </div>
+
+          <div class="card youtube">
+            <div class="flex-col">
+              <div class="name">
+                <img src="./images/icon-youtube.svg" alt="yt" />
+                <small>Nathan F.</small>
+              </div>
+              <h1>8239</h1>
+              <p>Subscribers</p>
+              <small class="down"
+                ><span><img src="./images/icon-down.svg" alt="down" /></span>
+                144 Today</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview section -->
+    <section class="overview">
+      <div class="container">
+        <h2>Overview - Today</h2>
+        <div class="grid-overview">
+          <div class="card">
+            <div class="flex-row top">
+              <h6>Page Views</h6>
+              <img src="./images/icon-facebook.svg" alt="fb" />
+            </div>
+            <div class="flex-row">
+              <h3>87</h3>
+              <small class="up"
+                ><span><img src="./images/icon-up.svg" alt="up" /></span>
+                3%</small
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex-row top">
+              <h6>Likes</h6>
+              <img src="./images/icon-facebook.svg" alt="fb" />
+            </div>
+            <div class="flex-row">
+              <h3>52</h3>
+              <small class="down"
+                ><span><img src="./images/icon-down.svg" alt="down" /></span>
+                2%</small
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="flex-row top">
+              <h6>Likes</h6>
+              <img src="./images/icon-instagram.svg" alt="insta" />
+            </div>
+            <div class="flex-row">
+              <h3>5462</h3>
+              <small class="up"
+                ><span><img src="./images/icon-up.svg" alt="up" /></span>
+                2257%</small
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex-row top">
+              <h6>Profile Views</h6>
+              <img src="./images/icon-instagram.svg" alt="insta" />
+            </div>
+            <div class="flex-row">
+              <h3>52k</h3>
+              <small class="up"
+                ><span><img src="./images/icon-up.svg" alt="up" /></span>
+                1375%</small
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="flex-row top">
+              <h6>Retweets</h6>
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+            </div>
+            <div class="flex-row">
+              <h3>117</h3>
+              <small class="up"
+                ><span><img src="./images/icon-up.svg" alt="up" /></span>
+                303%</small
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex-row top">
+              <h6>Likes</h6>
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+            </div>
+            <div class="flex-row">
+              <h3>507</h3>
+              <small class="up"
+                ><span><img src="./images/icon-up.svg" alt="up" /></span>
+                553%</small
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="flex-row top">
+              <h6>Likes</h6>
+              <img src="./images/icon-youtube.svg" alt="yt" />
+            </div>
+            <div class="flex-row">
+              <h3>107</h3>
+              <small class="down"
+                ><span><img src="./images/icon-down.svg" alt="down" /></span>
+                19%</small
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex-row top">
+              <h6>Total Views</h6>
+              <img src="./images/icon-youtube.svg" alt="yt" />
+            </div>
+            <div class="flex-row">
+              <h3>1407</h3>
+              <small class="down"
+                ><span><img src="./images/icon-down.svg" alt="down" /></span>
+                12%</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

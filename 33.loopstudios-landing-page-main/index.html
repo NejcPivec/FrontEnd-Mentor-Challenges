@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="Frontend mentor site. It uses HTML5, CSS3, SASS, JAVASCRIPT"/>
+    <meta name=”robots” content=”index, follow”> 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app/scss/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header bottom-space">
+      <div class="container">
+        <nav class="flex flex-jc-sb flex-ai-c">
+          <a href="#" class="header__logo">
+            <img src="./images/logo.svg" alt="Loopstudios" />
+          </a>
+          <a href="#" id="btnHamburger" class="header__toggle hide-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+  
+          <div class="header__links hide-mobile">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+          </div>
+        </nav>
+        <h1>Immersive experiences that deliver</h1>
+  
+        <div class="header__menu flex flex-jc-c hide-desktop">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Leader Section -->
+    <section class="leader container bottom-space">
+      <img src="./images/mobile/image-interactive.jpg" alt="Interactive" />
+      <div>
+        <h2>The leader in interactive VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </section>
+
+    <!-- Creations Section -->
+    <section class="creations container bottom-space">
+      <div class="hide-desktop">
+        <div class="creations__grid">
+          <div>
+            <img src="./images/mobile/image-deep-earth.jpg" alt="Deep Earth" />
+            <h3>Deep</br> earth</h3>
+          </div>
+          <div>
+            <img
+              src="./images/mobile/image-night-arcade.jpg"
+              alt="Night Arcade"
+            />
+            <h3>Night</br> arcade</h3>
+          </div>
+          <div>
+            <img src="./images/mobile/image-soccer-team.jpg" alt="Soccer Team" />
+            <h3>Soccer</br> team VR</h3>
+          </div>
+          <div>
+            <img src="./images/mobile/image-grid.jpg" alt="Grid" />
+            <h3>The</br> grid</h3>
+          </div>
+          <div>
+            <img src="./images/mobile/image-from-above.jpg" alt="From Above" />
+            <h3>From up</br> above VR</h3>
+          </div>
+          <div>
+            <img
+              src="./images/mobile/image-pocket-borealis.jpg"
+              alt="Pocket Borealis"
+            />
+            <h3>Pocket</br> borealis</h3>
+          </div>
+          <div>
+            <img src="./images/mobile/image-curiosity.jpg" alt="The Curiosity" />
+            <h3>The</br> curiosity</h3>
+          </div>
+          <div>
+            <img src="./images/mobile/image-fisheye.jpg" alt="Fisheye" />
+            <h3>Make it</br> fisheye</h3>
+          </div>
+        </div>  
+        <button class="button">See all</button>
+      </div>
+
+      <div class="hide-mobile">
+        <div class="creations__head">
+          <h2>Our creations</h2>
+          <button class="button">See all</button>
+        </div>
+        <div class="creations__grid">
+          <div>
+            <img src="./images/desktop/image-deep-earth.jpg" alt="Deep Earth" />
+            <h3>Deep</br> earth</h3>
+          </div>
+          <div>
+            <img
+              src="./images/desktop/image-night-arcade.jpg"
+              alt="Night Arcade"
+            />
+            <h3>Night</br> arcade</h3>
+          </div>
+          <div>
+            <img src="./images/desktop/image-soccer-team.jpg" alt="Soccer Team" />
+            <h3>Soccer</br> team VR</h3>
+          </div>
+          <div>
+            <img src="./images/desktop/image-grid.jpg" alt="Grid" />
+            <h3>The</br> grid</h3>
+          </div>
+          <div>
+            <img src="./images/desktop/image-from-above.jpg" alt="From Above" />
+            <h3>From up</br> above VR</h3>
+          </div>
+          <div>
+            <img
+              src="./images/desktop/image-pocket-borealis.jpg"
+              alt="Pocket Borealis"
+            />
+            <h3>Pocket</br> borealis</h3>
+          </div>
+          <div>
+            <img src="./images/desktop/image-curiosity.jpg" alt="The Curiosity" />
+            <h3>The</br> curiosity</h3>
+          </div>
+          <div>
+            <img src="./images/desktop/image-fisheye.jpg" alt="Fisheye" />
+            <h3>Make it</br> fisheye</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__left flex">
+          <img src="./images/logo.svg" alt="Loopstudios">
+          <div class="flex">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+          </div>
+        </div>
+        <div class="footer__right flex">
+          <div class="flex">
+            <a href="#">
+              <i class="fab fa-facebook-square icon"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter icon"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-pinterest icon"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram icon"></i>
+            </a>
+          </div>
+          <p>© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- -->
+    <script
+      src="https://kit.fontawesome.com/48ae6ec199.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app/js/script.js"></script>
+  </body>
+</html>

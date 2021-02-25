@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$dark-cyan: hsl(185, 75%, 39%);
+$dark-saturated-blue: hsl(229, 23%, 23%);
+$dark-graish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+$small: 400px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-color: $dark-cyan;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -150px -200px , right 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+
+    @media screen and (max-width: $small) {
+        background-position: -750px -500px , 100px 500px;
+      }
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+    @media screen and (max-width: $small) {
+        width: 350px;
+        height: 350px;
+      }
+
+    .top-card {
+        background: url('./images/bg-pattern-card.svg') no-repeat center center/cover;
+        height: 150px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .avatar {
+        position: absolute;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bottom-card {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        
+        @media screen and (max-width: $small) {
+            height: 200px;
+          }
+
+        .name {
+            margin-top: 90px;
+
+            
+        @media screen and (max-width: $small) {
+            margin-top: 60px;
+          }
+
+            .name-text {
+                font-weight: 700;
+
+                .age-text {
+                    font-weight: 400;
+                    color: $dark-graish-blue;
+                }
+            }
+
+            .location-text {
+                font-size: 13px;
+                color: $dark-graish-blue;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .flex-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-top: 1px solid rgba($dark-gray, 0.2);
+        width: 400px;
+        padding: 30px 0;
+
+               
+        @media screen and (max-width: $small) {
+            width: 350px;
+            padding: 15px 0;
+          }
+        
+
+        .followers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .number-followers {
+                font-weight: 700;
+            }
+
+            .meaning-text {
+                font-size: 12px;
+                color: $dark-gray;
+                margin-top: 5px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-form">
+          <h1>IP Address Tracker</h1>
+          <form id="form">
+            <input
+              type="text"
+              id="user-input"
+              placeholder="Search for any IP address or domain IP"
+            />
+            <button type="submit"><i class="fas fa-chevron-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="results">
+        <div>
+          <h3>Address</h3>
+          <span class="result-text"
+            ><span class="ip-text">192.212.174.101</span></span
+          >
+        </div>
+        <div>
+          <h3>Location</h3>
+          <span class="result-text"
+            ><span class="city-text">Brooklyn, Ny 10001</span></span
+          >
+        </div>
+        <div>
+          <h3>Timezone</h3>
+          <span class="result-text"
+            >UTC <span class="timezone-text">- 05:00</span></span
+          >
+        </div>
+        <div>
+          <h3>ISP</h3>
+          <span class="result-text"
+            ><span class="isp-text">SpaceX Starlink</span></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="map" class="map"></div>
+
+    <script
+      src="https://kit.fontawesome.com/48ae6ec199.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

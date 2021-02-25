@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+
+:root {
+  --cyan-color: hsl(179, 62%, 43%);
+  --yellow-color: hsl(71, 73%, 54%);
+  --gray-color: hsl(204, 43%, 93%);
+  --blue-color: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  width: 900px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Top card */
+.top {
+  padding: 50px;
+  width: 80%;
+}
+
+.top h1 {
+  color: var(--cyan-color);
+  font-weight: 700;
+}
+
+.top h2 {
+  color: var(--yellow-color);
+  margin: 20px 0;
+}
+
+.top p {
+  color: var(--blue-color);
+  line-height: 1.7;
+}
+
+/* Bottom cards */
+.bottom {
+  display: flex;
+}
+
+.bottom > div {
+  flex: 1;
+}
+
+.bottom .bottom-left {
+  background-color: var(--cyan-color);
+  padding: 50px;
+  border-bottom-left-radius: 10px;
+  color: #fff;
+}
+
+.bottom-left p {
+  margin: 15px 0;
+}
+
+.bottom-left p span {
+  font-size: 30px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.bottom-left button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--yellow-color);
+  padding: 15px 35px;
+  width: 70%;
+  font-family: "Karla", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.bottom .bottom-right {
+  background-color: hsl(179, 63%, 61%);
+  padding: 50px;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+}
+
+.bottom-right h2 {
+  margin-bottom: 10px;
+}
+.bottom-right li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+/* Mobile size */
+@media (max-width: 400px) {
+  .card {
+    width: 350px;
+    height: 80vh;
+    margin-bottom: 100px;
+  }
+
+  .top {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .top h1 {
+    font-size: 25px;
+  }
+
+  .top h2 {
+    font-size: 18px;
+  }
+
+  .bottom .bottom-left {
+    padding: 20px;
+    border-radius: 0px;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .bottom > div {
+    flex: none;
+  }
+
+  .bottom .bottom-right {
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .bottom-left button {
+    width: 100%;
+  }
+}

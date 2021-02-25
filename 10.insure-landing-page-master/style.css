@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap");
+
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  border: 1px solid var(--dark-violet);
+  padding: 5px 20px;
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+/* Navbar */
+.navbar {
+  justify-content: space-between;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+.navbar .right ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar .right ul li {
+  margin-left: 20px;
+}
+
+.navbar .right ul li a {
+  text-decoration: none;
+  color: var(--dark-grayish-violet);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navbar .right ul li a:hover {
+  color: var(--dark-violet);
+}
+
+.navbar .right ul li a.btn-dark {
+  color: var(--dark-violet);
+}
+
+.navbar .right ul li a.btn-dark:hover {
+  color: #fff;
+  background-color: var(--very-dark-violet);
+}
+
+/* Header */
+header {
+  background-color: var(--very-dark-violet);
+  color: #fff;
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 250px;
+}
+
+header * {
+  z-index: 1;
+}
+
+header .flex > div {
+  flex: 1;
+}
+
+h1,
+h2 {
+  font-size: 60px;
+  line-height: 1.1;
+  padding-top: 50px;
+  position: relative;
+  font-weight: 400;
+}
+
+h1::before,
+h2::before {
+  content: "";
+  background-color: #fff;
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header p {
+  color: var(--very-light-gray);
+  opacity: 0.7;
+  margin: 20px 0 40px;
+}
+
+.btn-light {
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 10;
+  background-color: transparent;
+}
+
+header .familly {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header img {
+  margin-bottom: -250px;
+  width: 90%;
+}
+
+header::after {
+  content: "";
+  background: url("./images/bg-pattern-intro-right-desktop.svg") no-repeat top
+    right;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+header::before {
+  content: "";
+  background: url("./images/bg-pattern-intro-left-desktop.svg") no-repeat bottom
+    left;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+  z-index: 0;
+}
+
+/* Diffrent section */
+.different {
+  margin: 100px 0;
+}
+
+.different h2::before {
+  background-color: var(--dark-grayish-violet);
+}
+
+.card img {
+  width: 70px;
+  margin: 50px 0 20px;
+}
+
+.card p {
+  width: 90%;
+  margin-top: 20px;
+}
+
+/* Find section */
+.find {
+  background-color: var(--very-dark-violet);
+  color: var(--very-light-gray);
+  padding: 60px 70px;
+  position: relative;
+}
+
+.find .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.find h2 {
+  font-size: 45px;
+  padding-top: 0;
+  width: 80%;
+}
+
+.find h2::before {
+  display: none;
+}
+
+.find a.btn-light {
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 10;
+  background-color: transparent;
+  text-decoration: none;
+  z-index: 10;
+  display: inline-block;
+  text-align: center;
+}
+
+.find::before {
+  content: "";
+  background: url("./images/bg-pattern-how-we-work-desktop.svg") no-repeat top
+    right;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+/* Footer */
+footer {
+  background-color: hsla(0, 0%, 97%, 0.911);
+  position: relative;
+}
+
+footer .social-footer {
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(0, 0%, 77%);
+  padding: 20px 0;
+}
+
+.social ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.social li {
+  margin-left: 10px;
+}
+
+footer .links {
+  padding: 20px 0;
+}
+
+footer .links ul {
+  list-style-type: none;
+  margin-right: 200px;
+}
+
+footer .links h4 {
+  color: var(--dark-grayish-violet);
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+footer .links ul li {
+  text-transform: uppercase;
+  color: var(--dark-violet);
+  font-weight: 700;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  background: url("./images/bg-pattern-footer-desktop.svg") no-repeat top left;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 1100px) {
+  footer .links ul {
+    margin-right: 100px;
+  }
+}
+
+/* Tablet size */
+@media (max-width: 800px) {
+  header {
+    margin-bottom: 100px;
+  }
+
+  header::after {
+    display: none;
+  }
+
+  header::before {
+    display: none;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .find::before {
+    display: none;
+  }
+
+  .find h2 {
+    font-size: 30px;
+  }
+
+  footer .links ul {
+    list-style-type: none;
+    margin-right: 50px;
+  }
+}
+
+/* Mobile Size */
+@media (max-width: 600px) {
+  .container {
+    padding: 0;
+  }
+
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar.flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar .left {
+    padding: 20px;
+  }
+
+  .navbar .right ul {
+    display: none;
+  }
+
+  nav .hamburger {
+    background-color: transparent;
+    display: flex;
+    justify-content: right;
+    border: 0;
+    cursor: pointer;
+    margin-left: 150px;
+  }
+
+  nav .hamburger .close {
+    display: none;
+  }
+
+  nav .hamburger.show .open {
+    display: none;
+  }
+
+  nav .hamburger.show .close {
+    display: block;
+  }
+
+  .navbar .right ul li a.btn-dark {
+    color: #fff;
+  }
+
+  .navbar .right ul li a:visited {
+    color: #fff;
+  }
+
+  nav .right ul.show {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 60px;
+    left: 0;
+    background-color: var(--very-dark-violet);
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  header .flex {
+    flex-direction: column-reverse;
+  }
+
+  header {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .header-bottom {
+    padding: 20px 10px 80px;
+    position: relative;
+  }
+
+  h1,
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  h1::before,
+  h2::before {
+    left: 36%;
+  }
+
+  header img {
+    margin-bottom: -23px;
+    width: 100%;
+  }
+
+  .header-bottom::after {
+    content: "";
+    background: url("./images//bg-pattern-intro-left-mobile.svg") no-repeat top
+      left;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+  }
+
+  .header-bottom::before {
+    content: "";
+    background: url("./images/bg-pattern-intro-right-mobile.svg") no-repeat
+      bottom right;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+    z-index: 0;
+  }
+
+  /* Diffrent section */
+  .different {
+    margin: 80px 0;
+    padding: 10px;
+  }
+
+  .different h2::before {
+    background-color: var(--dark-grayish-violet);
+    margin: 0 auto;
+  }
+
+  .card p {
+    width: 100%;
+  }
+
+  /* Find section */
+  .find {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .find .flex {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .find h2 {
+    font-size: 35px;
+    padding-top: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .find::before {
+    background: url("./images/bg-pattern-how-we-work-mobile.svg") no-repeat top
+      right;
+    display: inline;
+  }
+
+  /* Footer */
+  footer {
+    padding: 50px;
+  }
+
+  footer .social-footer {
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(0, 0%, 77%);
+    padding: 20px 0;
+  }
+
+  .social li {
+    margin: 10px;
+    margin-top: 20px;
+  }
+
+  footer .links {
+    padding: 20px 0;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  footer .links ul {
+    list-style-type: none;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  footer::before {
+    content: "";
+    position: absolute;
+    background: url("./images/bg-pattern-footer-mobile.svg") no-repeat top left;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}

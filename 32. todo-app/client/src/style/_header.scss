@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 0.625rem;
+    color: $white;
+  }
+
+  &__button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

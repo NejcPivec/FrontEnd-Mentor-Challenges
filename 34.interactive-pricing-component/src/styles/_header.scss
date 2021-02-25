@@ -1,0 +1,31 @@
+.header {
+  height: 30vh;
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+
+  div {
+    transform: translateY(100px);
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    color: $darkDesaturatedBlue;
+
+    @include breakpoint-up(medium) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    color: $grayishBlue;
+    font-size: 0.8rem;
+    width: 50%;
+    margin: 0 auto;
+
+    @include breakpoint-up(medium) {
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
+
+:root {
+  --very-light-gayish: hsl(240, 78%, 98%);
+  --light-gayish: hsl(234, 14%, 74%);
+  --gayish: hsl(233, 13%, 49%);
+  --dark-gayish: hsl(232, 13%, 33%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--very-light-gayish);
+  color: var(--gayish);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  background: url("./images/bg-top.svg") no-repeat top right;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  background: url("./images/bg-bottom.svg") no-repeat bottom left;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.header {
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.header span {
+  font-size: 14px;
+  color: var(--light-gayish);
+}
+
+/* Toggle button */
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-container label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.toggle-container input {
+  position: absolute;
+  left: -9999px;
+}
+
+.toggle-container label .ball {
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.5s ease;
+}
+
+.toggle-container input:checked + label .ball {
+  transform: translateX(30px);
+}
+
+/* Cards */
+.flex {
+  display: flex;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  margin: 0 5px;
+  border-radius: 5px;
+  padding: 30px 50px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 60px;
+  margin: 20px;
+  width: 250px;
+}
+
+.card ul {
+  list-style-type: none;
+  border-top: 1px solid hsla(234, 14%, 74%, 0.5);
+}
+
+.card ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid hsla(234, 14%, 74%, 0.5);
+  font-size: 15px;
+}
+
+button {
+  padding: 10px 30px;
+  width: 100%;
+  height: 40px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid var(--dark-gayish);
+  background-image: none;
+  color: hsl(237, 63%, 64%);
+}
+
+button:focus {
+  outline: none;
+}
+
+.card-purple {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: #fff;
+  margin: -15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-purple > * {
+  width: 100%;
+}
+
+.card-purple button {
+  border: none;
+  background-image: none;
+  background-color: #fff;
+  color: hsl(237, 63%, 64%);
+  width: 100%;
+}
+
+.card-purple button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+}
+
+/* checked Functionallity */
+.monthly {
+  display: none;
+}
+
+.show-monthly .card .monthly {
+  display: block;
+}
+
+.show-monthly .card .annually {
+  display: none;
+}
+
+/* Tablet size */
+@media (max-width: 1100px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .card-purple {
+    margin: 10px 0;
+  }
+}
+
+/* Phone size */
+@media (max-width: 400px) {
+  .card {
+    padding: 30px 30px;
+  }
+}

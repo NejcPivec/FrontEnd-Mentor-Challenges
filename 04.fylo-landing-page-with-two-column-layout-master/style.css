@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap");
+
+:root {
+  --dark-blue-color: hsl(243, 87%, 12%);
+  --desaturated-blue-color: hsl(238, 22%, 44%);
+  --bright-blue-color: hsl(224, 93%, 58%);
+  --moderate-cyan-color: hsl(170, 45%, 43%);
+  --grayish-blue-color: hsl(240, 75%, 98%);
+  --gray-color: hsl(0, 0%, 75%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark-blue-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex > div,
+.flex > ul {
+  flex: 1;
+}
+
+/* Header section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.right img {
+  width: 80%;
+}
+
+h1 {
+  line-height: 1.5;
+}
+
+header p {
+  margin: 20px 0;
+}
+
+header input {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 10px 30px;
+  border-radius: 2px;
+}
+
+header button {
+  padding: 10px 30px;
+  background: var(--bright-blue-color);
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  margin-left: 5px;
+}
+
+/* Productive section */
+.productive {
+  background: var(--grayish-blue-color);
+  margin-top: 200px;
+  padding: 40px;
+  position: relative;
+}
+
+.productive::before {
+  content: "";
+  background: url("./images/bg-curve-desktop.svg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: -60px;
+  left: 0;
+}
+
+.productive .illustration {
+  width: 80%;
+}
+
+.productive h2 {
+  margin-bottom: 30px;
+}
+
+.productive p {
+  margin: 10px 0;
+  width: 80%;
+  font-size: 13px;
+}
+
+.productive a {
+  color: var(--moderate-cyan-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--moderate-cyan-color);
+}
+
+.testimonial {
+  background: #fff;
+  width: 50%;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.testimonial .user-info {
+  display: flex;
+}
+
+.testimonial p {
+  width: 100%;
+}
+
+.testimonial .user-info img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Access section */
+.access {
+  background: var(--desaturated-blue-color);
+  color: #fff;
+  padding: 60px 0;
+}
+
+.access .access-left p {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.access-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.access-right form input {
+  padding: 10px 30px;
+  border-radius: 2px;
+  border: none;
+  width: 70%;
+}
+
+.access-right form button {
+  padding: 10px 30px;
+  background: var(--bright-blue-color);
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  width: 35%;
+  margin-top: 10px;
+}
+
+/* Footer section */
+footer {
+  background: var(--dark-blue-color);
+  color: var(--gray-color);
+  padding: 60px 0;
+}
+
+footer img {
+  margin-right: 10px;
+}
+
+footer li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+footer .social-media {
+  display: flex;
+}
+
+footer .social-media a {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+footer .circle {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .testimonial {
+    width: 70%;
+  }
+}
+
+@media (max-width: 900px) {
+  .access-right form button {
+    width: 70%;
+  }
+
+  .connections li {
+    width: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  header input {
+    margin-bottom: 10px;
+  }
+
+  .productive h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .testimonial {
+    width: 90%;
+  }
+
+  .productive .illustration {
+    margin-left: 40px;
+  }
+
+  .access .access-left p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .connections li {
+    width: 200px;
+  }
+
+  footer .icon {
+    width: 12px;
+    margin-right: 5px;
+  }
+
+  footer li {
+    font-size: 12px;
+  }
+
+  footer ul:nth-child(2) {
+    margin-left: 50px;
+  }
+}
+
+/* Mobile size */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  nav li {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+
+  nav img {
+    width: 30%;
+  }
+
+  .right {
+    order: 1;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .left {
+    order: 2;
+  }
+
+  .left h1 {
+    font-size: 25px;
+  }
+
+  header p {
+    margin: 20px 0;
+  }
+
+  header input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  header button {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Productive section */
+  .productive {
+    margin-top: 120px;
+    padding: 0;
+  }
+
+  .productive::before {
+    background: url("./images/bg-curve-mobile.svg") no-repeat center
+      center/cover;
+  }
+
+  .productive .productive-img {
+    order: 1;
+  }
+
+  .productive .productive-text {
+    order: 2;
+  }
+
+  .productive .illustration {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .productive h2 {
+    font-size: 17px;
+  }
+
+  .productive p {
+    width: 100%;
+    font-size: 13px;
+    text-align: start;
+  }
+
+  .productive a {
+    margin-top: 20px;
+    font-weight: 700;
+  }
+
+  .testimonial {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+
+  .testimonial .user-info {
+    display: flex;
+  }
+
+  .testimonial p {
+    width: 100%;
+    text-align: start;
+  }
+
+  /* Access section */
+
+  .access .access-left p {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .access-right form input {
+    padding: 10px 30px;
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+  }
+
+  .access-right form button {
+    width: 100%;
+  }
+
+  /* Footer section */
+
+  footer img {
+    margin-right: 10px;
+  }
+
+  footer .align-start {
+    align-items: flex-start;
+  }
+
+  footer .social-media {
+    margin: 0 auto;
+  }
+
+  footer ul {
+    margin-bottom: 20px;
+  }
+
+  footer ul:first-child {
+    margin-top: 20px;
+  }
+
+  footer ul:nth-child(2) {
+    margin-left: 0;
+  }
+}
