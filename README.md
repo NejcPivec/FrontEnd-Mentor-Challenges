@@ -13,6 +13,9 @@ All the challenges are found here:
 - React
 - SASS
 - LESS
+- Express
+- Node
+- PostgreSQL
 
 ## Live sites:
 
@@ -74,10 +77,14 @@ All the challenges are found here:
 
 28. [Room-homepage](https://wizardly-saha-a8472a.netlify.app)
 
-29. [Testimonial Grid Section](https://gracious-kilby-cfeeb8.netlify.app)
+29. [Faq Accordition Card](https://affectionate-dubinsky-618518.netlify.app/)
 
-30. [Profile Card Component](https://happy-feynman-f0bd09.netlify.app/)
+30. [Testimonial Grid Section](https://gracious-kilby-cfeeb8.netlify.app)
 
-31. [Loopstudios landing page](https://nervous-volhard-bda602.netlify.app/)
+31. [Profile Card Component](https://happy-feynman-f0bd09.netlify.app/)
 
-32. [Interactive pricing component](https://epic-nightingale-e8459e.netlify.app/)
+32. Todo App - PERN Stack
+
+33. [Loopstudios landing page](https://nervous-volhard-bda602.netlify.app/)
+
+34. [Interactive pricing component](https://epic-nightingale-e8459e.netlify.app/)
