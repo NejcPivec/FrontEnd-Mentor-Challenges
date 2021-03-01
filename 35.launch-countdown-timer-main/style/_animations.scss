@@ -1,0 +1,19 @@
+@keyframes flip1 {
+  99.99% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+}
+
+@keyframes flip2 {
+  0.01% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
